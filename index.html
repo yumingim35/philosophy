@@ -382,6 +382,65 @@
       }
     }
 
+  
+    /* Final polish */
+    .context-note{
+      margin-top:64px;
+    }
+    .context-note p{
+      max-width:760px;
+      font-size:clamp(28px,4.4vw,48px);
+      line-height:1.2;
+    }
+
+    .writing{
+      padding:40px 34px;
+      margin-bottom:0;
+    }
+    .writing h3{
+      font-size:clamp(32px,4.6vw,50px);
+    }
+    .writing p{
+      max-width:760px;
+      line-height:1.7;
+    }
+
+    .portfolio-link{
+      padding:54px 0 44px;
+    }
+    .portfolio-link-inner{
+      align-items:center;
+    }
+    .portfolio-link h2{
+      max-width:680px;
+      font-size:clamp(28px,4vw,46px);
+    }
+    .portfolio-arrow{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 22px;
+      border-radius:999px;
+      background:var(--text);
+      color:#fff;
+      font-size:14px;
+      font-weight:750;
+      transition:transform .2s ease, opacity .2s ease;
+    }
+    .portfolio-arrow:hover{
+      transform:translateY(-2px);
+      opacity:.9;
+    }
+
+    @media(max-width:760px){
+      .writing{
+        padding:30px 22px;
+      }
+      .portfolio-arrow{
+        margin-top:24px;
+      }
+    }
+
   </style>
 </head>
 
@@ -477,10 +536,22 @@
         <div class="context-note">
           <div class="label">The person I aim to be</div>
           <p>
-            많이 아는 사람보다,<br>
-            맥락을 빠르게 이해하고 필요한 결과를 만드는 사람.
+            맥락을 이해하고,<br>
+            필요한 결과를 만드는 사람.
           </p>
         </div>
+      </div>
+    </section>
+
+    <section class="portfolio-link">
+      <div class="wrap portfolio-link-inner">
+        <div>
+          <div class="label">Portfolio</div>
+          <h2>경험과 대표 프로젝트를 확인해보세요.</h2>
+        </div>
+        <a class="portfolio-arrow" href="https://yumingim35.github.io/portfolio/" target="_blank" rel="noreferrer">
+          View Portfolio ↗
+        </a>
       </div>
     </section>
 
@@ -488,7 +559,7 @@
       <div class="wrap">
         <div class="writing">
           <div>
-            <div class="label">Thinking in Public</div>
+            <div class="label">LinkedIn Series</div>
             <h3>AI와 일하는 중</h3>
             <p>
               AI를 단순한 생산성 도구가 아니라 업무 방식을 개선하는 방법으로 활용합니다.
@@ -497,18 +568,6 @@
           </div>
           <a class="button" href="https://www.linkedin.com/in/yuminiii" target="_blank" rel="noreferrer">Read on LinkedIn</a>
         </div>
-      </div>
-    </section>
-
-    <section class="portfolio-link">
-      <div class="wrap portfolio-link-inner">
-        <div>
-          <div class="label">Selected Experience</div>
-          <h2>생각이 실제 업무에서 어떻게 이어졌는지 확인해보세요.</h2>
-        </div>
-        <a class="portfolio-arrow" href="https://yumingim35.github.io/portfolio/" target="_blank" rel="noreferrer">
-          View Portfolio ↗
-        </a>
       </div>
     </section>
 
